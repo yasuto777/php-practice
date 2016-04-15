@@ -3,7 +3,7 @@ $(function(){
         //クリック時にしたい処理
         var timestamp = $.now();
         //alert(timestamp);
-        $.get('time.php',{
+        $.get('./time.php',{
             val: timestamp
         },function(data){
             $("#output").html(data);
