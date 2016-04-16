@@ -1,0 +1,18 @@
+html{
+    text-align: center;
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+    font: bold;
+}
+
+#output{
+    position: relative;
+    margin: 0 auto;
+    rgba(0,100,250,0.8);
+    width: 60%;
+    height: 60px;
+}
+
+.explanation pre{
+    font-size: 20px;
+}
