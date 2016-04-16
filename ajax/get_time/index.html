@@ -3,12 +3,31 @@
 <head>
 	<meta charset="UTF-8">
 	<title>現在時刻の取得</title>
-	<!--link rel="stylesheet" href="index.css"-->
+	<link rel="stylesheet" href="index.css">
 	<script src="js/jquery-2.1.4.min.js"></script>
 	<script src="js/time.js"></script>
 </head>
 <body>
-    <div id="output">yyyy</div>
+   <h1>練習として、Ajaxで現在時刻を表示してみる。</h1>
+    <div id="output">
+        <span id="clock"><br>YYYY/MM/DD HH:ii:ss(D)</span>
+        </div>
 	<button id="btn">現在時刻を取得</button>
+    <span class="explanation">
+        <h2>やってること</h2>
+        <pre>
+        ・ボタンクリックでイベント発火
+        ↓
+        ・フロント側でタイムスタンプを取得
+        ↓
+        ・GETメソッドでタイムスタンプをphpに送信
+        ↓
+        ・jsのタイムスタンプがミリ秒、phpが秒単位だったので位合わせ
+        ↓
+        ・指定したフォーマットに成形
+        ↓
+        ・最後にhtmlを書き換え
+        </pre>
+    </span>
 </body>
 </html>
