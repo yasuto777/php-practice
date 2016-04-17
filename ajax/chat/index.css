@@ -12,6 +12,11 @@ body{
     left: 20px;
 }
 
+.send_time{
+    display: inline-block;
+    color: white;
+}
+
 .outputField{
     margin: 0 auto;
     width: 80%;
@@ -28,7 +33,7 @@ body{
     text-align: center;
 }
 
-/* Paste */
+/* hukidashi */
 .arrow_box {
     position: relative;
     display:inline-block;
