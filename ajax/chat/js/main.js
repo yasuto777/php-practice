@@ -13,7 +13,7 @@ $(function(){
             success: function(data){
                 //送信成功時の処理
                 $('.outputField').append(data);
-            //$('.outputField').html(data);
+                $('#message').val("");
             }
         });
     });
