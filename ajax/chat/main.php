@@ -1,5 +1,7 @@
 <?php
 
+date_default_timezone_set('Asia/Tokyo');
+
 $user = $_POST['user'];
 $message = $_POST['message'];
 $now = date("H:i");
