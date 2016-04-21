@@ -6,8 +6,6 @@
 <body>
 
 <?php
-//ここで処理が止まってる...
-//$mysqli = new mysqli("localhost","chatadmin","talk","chat");
 $mysqli = mysqli_connect("localhost","chatadmin","talk","chat");
 
 // Check connection
