@@ -15,8 +15,10 @@ if(mysqli_connect_errno()){
 if($result = mysqli_query($mysqli,"SELECT * FROM table1")){
 
 	//Get associative array
-	which($row = mysqli_fetch_assoc($result)){
-		printf();
+	while($row = mysqli_fetch_assoc($result)){
+		echo "<br><div class=\"arrow_name\">".$row['user']."</div>";
+		echo "<div class=\"arrow_box\">".$row['message']."</div>";
+		echo "<div class=\"send_time\">".$row['dt']."</div>";
 	}
 	//Free $result
 	mysqli_free_result($result);
