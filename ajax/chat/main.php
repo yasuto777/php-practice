@@ -21,14 +21,12 @@ $message = $_POST['message'];
 $now = date("Y-m-d H:i:s");
 
 //Send query to MySQL
-if(mysqli_query($mysqli,"INSERT INTO table1 (user,message) VALUES('$user','$message')") === TRUE){
+if(mysqli_query($mysqli,"INSERT INTO table1 (user,message,dt) VALUES('$user','$message','$now')") === TRUE){
 
-echo "<br><br><div class=\"arrow_name\">".$user."</div>";
-    echo "<div class=\"arrow_box\">".$message."</div>";
+echo "<br><div class=\"arrow_name\">".$user."</div>";
+echo "<div class=\"arrow_box\">".$message."</div>";
 echo "<div class=\"send_time\">".$now."</div>";
 
-//Free $result
-//mysql_free_result($result);
 }
 //Close connecton
 mysqli_close($mysqli);
