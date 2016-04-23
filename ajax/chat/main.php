@@ -20,11 +20,13 @@ $user = $_POST['user'];
 $message = $_POST['message'];
 $now = date("Y-m-d H:i:s");
 
+$new_user = htmlspecialchars($user);
+$new_message = htmlspecialchars($message);
 //Send query to MySQL
 if(mysqli_query($mysqli,"INSERT INTO table1 (user,message,dt) VALUES('$user','$message','$now')") === TRUE){
 
-echo "<br><div class=\"arrow_name\">".$user."</div>";
-echo "<div class=\"arrow_box\">".$message."</div>";
+echo "<br><div class=\"arrow_name\">".$new_user."</div>";
+echo "<div class=\"arrow_box\">".$new_message."</div>";
 echo "<div class=\"send_time\">".$now."</div>";
 
 }
